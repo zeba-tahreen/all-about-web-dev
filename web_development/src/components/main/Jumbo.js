@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron as Jumbo, Container } from 'react-bootstrap';
+import { Jumbotron, Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import devpic from '../../assets/devpic.png';
 
@@ -23,27 +23,32 @@ const Styles = styled.div `
     right: 0;
     z-index: -1;
 }
-
+.header-main{
+    width:auto;
+    height:100px;
+}
 .header{
     color: green;
 }
+h4{
+    color:blue;
+}
 `;
 
-const Jumbotron = () => (
+const Jumbo = () => (
         <Styles>
-            <Jumbo fluid className="jumbo">
+            <Jumbotron fluid className="jumbo">
                 <div className="overlay">
                     <Container>
-                        <h1 className=" header mt-5">
-                        All About Web Development
-                        </h1>
-                        <p>
-                        A beginner's guide...
-                        </p>
+                        <div className="header-main">
+                        <h2 className="mt-5 header">All About Web Development</h2>
+                        <p className="journey-intro">My Journey to Become a Web Developer</p>
+                        <h4 className="text-right">Enjoy each and every step !!</h4>
+                        </div>
                     </Container>
                 </div>
-            </Jumbo>
+            </Jumbotron>
         </Styles>
 );
 
-export default Jumbotron; 
+export default Jumbo; 
