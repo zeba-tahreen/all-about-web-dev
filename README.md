@@ -40,7 +40,7 @@ In this web app "All about Web Development", I will try to grab as much as possi
 ![webdevfullstack](https://user-images.githubusercontent.com/50170893/73055503-ed73f600-3e5a-11ea-85f4-b5c1441b5e53.PNG)
 
 ## Project Live
-[Web Dev Beginner]("https://web-dev-beginner.herokuapp.com/")
+[Web Dev Beginner](https://web-dev-beginner.herokuapp.com/)
 
 ## Author
 [Zeba](https://github.com/zeba-tahreen)
