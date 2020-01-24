@@ -28,7 +28,6 @@ const Styles = styled.div`
 
 const Developer = () => (
   <Styles>
-    <Container className=" mb-20 main">
     <Container className="main-div">
       <div className="dev-main">
         <div className="mt-2 dev-heading">
@@ -138,9 +137,6 @@ const Developer = () => (
       </div> */}
       </div>
     </Container>
-
-    </Container>
-
   </Styles>
 );
 

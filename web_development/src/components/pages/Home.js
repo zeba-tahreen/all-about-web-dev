@@ -20,13 +20,31 @@ const Styles = styled.div`
 .next-link{
   text-align: right;
 }
+.into-para:first-letter{
+  margin-left:3%
+}
+.intro{
+  padding:6px;
 
+  &:hover{
+    box-shadow: 0 0 5px blue;
+  }
+}
 `;
 
 const Home = () => (
   <Styles>
-    <Container className=" mb-20 main">
       <Container className="main-div">
+        <div className="intro">
+          <p className="into-para"><i>Hello and Welcome to everyone, there are many developers out there who 
+            share their experience and nothing is more empowering than putting your thoughts
+             out there for the world to see. I am here to share my knowledge which I wish I 
+             knew before I started my career as a Full stack Developer, and I honestly believe 
+             it would have made me stronger than what I was. But your small gesture can 
+             positively influence someone’s entire career. It’s definitely worth the few 
+             minutes required, I hope this will be helpful to you.</i></p>
+
+        </div>
         <h2>Web Developer</h2>
         <hr />
         <p>In the modern world, pretty much everyone has internet access of some form and a
@@ -48,7 +66,7 @@ const Home = () => (
           and more.
        </p>
         <hr />
-        <div className="m-5 quiz-box">
+        <div className="m-1 quiz-box">
           <div className="mb-8 quiz-heading">
             <h3>Let's dive into the world of <b>"Web Development"</b>.</h3>
           </div>
@@ -161,8 +179,6 @@ const Home = () => (
         </div>
         <hr />
       </Container>
-    </Container>
-
   </Styles>
 );
 

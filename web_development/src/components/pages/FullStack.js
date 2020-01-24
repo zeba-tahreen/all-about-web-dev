@@ -15,7 +15,6 @@ const Styles = styled.div`
 
 const FullStack = () => (
   <Styles>
-    <Container className=" mb-20 main">
     <Container className="main-div">
       <div className="fullstack-main">
         <h2>Full stack Development</h2>
@@ -91,9 +90,6 @@ const FullStack = () => (
  
       </div>
     </Container>
-
-    </Container>
-
   </Styles>
 );
 

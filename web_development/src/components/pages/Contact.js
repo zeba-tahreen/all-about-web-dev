@@ -9,20 +9,15 @@ const Styles = styled.div`
   margin-bottom:5%;
 }
 
-
 `;
 
 const Contact = () => (
   <Styles>
-    <Container className=" mb-20 main">
     <Container className="main-div">
       <div className="contact-main">
 
       </div>
     </Container>
-
-    </Container>
-
   </Styles>
 );
 
