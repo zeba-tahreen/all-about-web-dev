@@ -1,16 +1,34 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { Link } from 'react-router-dom';
+import { Nav, Card } from 'react-bootstrap';
+import styled from 'styled-components';
+import devpic from '../../assets/devpic.png';
 
-function Learn() {
-  return (
-    <div>
-      <h1 className="text-center">hello</h1>
-      <p>
-        Lorem ipsum dolor sit amet, est ut enim consequat. Nostrum fastidii partiendo sed ne, no
-        mutat ludus aperiri mea, per in choro dolorem electram. Invidunt reprimique assueverit quo
-        ne, eruditi graecis pro ut. Usu ut diceret scaevola evertitur, appareat voluptatibus ad vel.
-      </p>
-    </div>
-  );
-}
+const Styles = styled.div`
+.navbar{
+  height: 50px;
+  background-color: black;
+  border-bottom: 1px solid white;
+}`
 
-export default Learn;
+const NoMatch = () => (
+
+  <Fragment>
+    <Styles>
+      <Nav className="navbar" />
+    </Styles>
+    <Card className="bg-dark text-white">
+      <Card.Img src={`/${devpic}`} alt="Web dev" />
+      <Card.ImgOverlay>
+        <Card.Title>Card title</Card.Title>
+        <Card.Text>
+          This is a wider card with supporting text below as a natural lead-in to
+          additional content. This content is a little bit longer.
+        </Card.Text>
+        <Card.Text>Last updated 3 mins ago</Card.Text>
+      </Card.ImgOverlay>
+    </Card>
+  </Fragment>
+);
+
+export default NoMatch;
