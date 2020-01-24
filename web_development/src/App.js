@@ -4,9 +4,10 @@ import Layout from "./components/main/Layout";
 import Home from "./components/pages/Home";
 import FullStack from "./components/pages/FullStack";
 import Developer from "./components/pages/Developer";
-// import Contact from "./components/pages/Contact";
 import Navigationbar from './components/main/Navigationbar';
-import Jumbotron from './components/main/Jumbotron';
+import Jumbo from './components/main/Jumbo';
+import Wrapper from "./components/main/Wrapper";
+
 
 class App extends Component {
   render() {
@@ -14,14 +15,15 @@ class App extends Component {
       <Fragment>
         <Router>
           <Navigationbar />
-          <Jumbotron />
+          <Jumbo />
           <Layout>
+            <Wrapper>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/fullstack" component={FullStack} />
               <Route exact path="/developers" component={Developer} />
-              {/* <Route path="/contact" component={Contact} /> */}
             </Switch>
+            </Wrapper>
         </Layout>
         </Router>
       </Fragment>
