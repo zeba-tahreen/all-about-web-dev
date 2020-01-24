@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 
@@ -28,31 +28,14 @@ const Styles = styled.div`
 const Navigationbar = () => (
     <Styles>
         <Navbar expand="lg">
-            <Navbar.Brand href="/">WEB DEV</Navbar.Brand>
+            <Navbar.Brand as={Link} to='/'>WEB DEV</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto mr-auto">
-                    <Nav.Item className="span">
-                        <Nav.Link>
-                            <Link to="/">Home</Link>
-                        </Nav.Link>
-                    </Nav.Item >
-                    <Nav.Item>
-                        <Nav.Link>
-                            <Link to="/developers">Developer</Link>
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link>
-                            <Link to="/fullstack">Full Stacks</Link>
-                        </Nav.Link>
-                    </Nav.Item >
-                    {/* <Nav.Item >
-                        <Nav.Link>
-                            <Link to="/contact">Contact</Link>
-                        </Nav.Link>
-                    </Nav.Item> */}
-                    </Nav>
+                    <Nav.Link as={NavLink} to='/' exact activeStyle={{ color: 'blue' }}>Home</Nav.Link>
+                    <Nav.Link as={NavLink} to='/developers' exact activeStyle={{ color: 'blue' }}>Developer</Nav.Link>
+                    <Nav.Link as={NavLink} to='/fullstack' exact activeStyle={{ color: 'blue' }}>Full Stacks</Nav.Link>
+                </Nav>
             </Navbar.Collapse>
         </Navbar>
     </Styles>
