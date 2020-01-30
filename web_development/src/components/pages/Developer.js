@@ -33,7 +33,7 @@ const Developer = () => (
         <div className="mt-2 dev-heading">
           <h1>Types of Developers</h1>
         </div>
-      <div className="mt-5 dev-para">
+      <div className="mt-3 dev-para">
       As noted before, there are some different types of web developers, each of which focuses 
       on a different aspect of the creation of a website. Web developers also known as software engineers 
       who specialize in creating websites. They are either front-end developers, back-end 
