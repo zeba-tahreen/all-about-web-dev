@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Card, Jumbotron } from 'react-bootstrap';
 import styled from 'styled-components';
 
@@ -29,7 +29,6 @@ margin : 2%;
 `;
 
 const NoMatch = () => (
-  <Fragment>
     <Styles>
       <Jumbotron className='jumbomatch'>
         <Card>
@@ -59,7 +58,6 @@ const NoMatch = () => (
         </Card>
       </Jumbotron>
     </Styles>
-  </Fragment>
 );
 
 export default NoMatch;

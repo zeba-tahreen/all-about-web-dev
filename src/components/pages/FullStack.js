@@ -1,5 +1,5 @@
-import React, { Children, Component } from 'react';
-import { Container, } from 'react-bootstrap';
+import React, { Component } from 'react';
+import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import Layout from '../main/Layout';
 
